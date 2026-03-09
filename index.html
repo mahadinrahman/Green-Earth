@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green-Earth</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-[#15803D30]">
+    <main class="w-11/12 mx-auto pt-[50px] ">
+        <h2 class="text-center text-5xl font-extrabold text-green-600">Choose Your Trees</h2>
+        
+        <section class="mt-[50px] grid grid-cols-5 gap-5">
+            <!-- button -->
+            <div class="button  col-span-1 ">
+                <div class="sticky top-0">
+                <h2 class="font-bold text-2xl mb-4">Catagories</h2>
+                
+                <button id="all-tree-btn" onclick="treebtn()"  class="btn  btn-outline  btn-block mb-1  ">All Trees</button>
+                
+                <div id="allTreebtn" class="space-y-1">
+                
+                </div>
+                </div>
+            </div>
+            <!-- cards -->
+          
+
+         <section id="spinner" class="flex justify-center items-start hidden ml-[200px] mt-[100px]">
+          <span class="loading loading-bars loading-xl"></span>
+         </section>
+
+
+         <div class="card  col-span-3 ">
+        <div id="all-container" class="grid grid-cols-3 gap-2 space-y-2 min-h-screen">
+
+        </div>
+        
+    </div>
+           
+          <!-- carts -->
+            <div class="cart  col-span-1">
+                
+                <h2 class="font-bold text-2xl mb-3">Your Cart</h2>
+        <div  class="space-y-4 ">
+            <div id="cartContainer" class="space-y-4">
+
+            </div>
+           
+           
+         <div class="flex justify-between items-center bg-green-50 rounded-lg p-4 my-4">
+                <span>Total:</span>
+                <span id="totalPrice">$0</span>
+            </div>
+        </div>
+            
+        </div>
+        </section>
+
+    </main >
+   
+    
+
+    <script src="./index.js"></script>
+</body>
+</html>
